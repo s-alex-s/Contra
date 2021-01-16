@@ -4,7 +4,7 @@ block_cipher = None
 
 
 a = Analysis(['main.py'],
-             pathex=['E:\\Python\\contra'],
+             pathex=['E:\\Python\\Contra'],
              binaries=[],
              datas=[],
              hiddenimports=[],

@@ -705,11 +705,11 @@ class AlienEgg(Animation):
         for i in snipers:
             if i[2] == "alive":
                 self.alive += 1
-        if self.alive == 4 and self.stage == 1:
+        if self.alive == 5 and self.stage == 1:
             egg_image = load_image('2_stage.png', name="Egg")
             self.change_anim(egg_image, 1, 1)
             self.stage = 2
-        if self.alive == 3 and self.stage == 2:
+        if self.alive == 0 and self.stage == 2:
             egg_image = load_image('3_stage.png', name="Egg")
             self.change_anim(egg_image, 4, 1)
             self.stage = 3
