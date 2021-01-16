@@ -971,7 +971,7 @@ class Bridge(pygame.sprite.Sprite):
         super().__init__(all_sprites, bridge_group)
         self.image = tile_images[tile_type]
         self.rect = self.image.get_rect().move(
-            tile_width * pos_x, tile_height * pos_y)
+            tile_width * pos_x, tile_height * pos_y - 1)
         self.isBoom = False
         self.count_iter = 0
 
